@@ -9,7 +9,7 @@ camiseta(vermelha).
 nome(anita).
 nome(clara).
 nome(fernanda).
-nome(marieta).
+nome(marietta).
 nome(rosana).
 
 % Possiveis produtos
@@ -75,7 +75,7 @@ solucao(ListaSolucao) :-
 entre(cliente(azul, _, _, _, _, _), cliente(_, _, _, _, _, irmao), cliente(_, _, _, _, 22, _), ListaSolucao),
 
 % A mulher de Vermelho está ao lado da mulher que está comprando um Fogão.
-aoLado(cliente(vermelho, _, _, _, _, _), cliente(_, _, fogao, _, _, _), ListaSolucao),
+aoLado(cliente(vermelha, _, _, _, _, _), cliente(_, _, fogao, _, _, _), ListaSolucao),
 
 % Em uma das pontas está a mulher de camiseta Amarela.
 naPonta(cliente(amarela, _, _, _, _, _), ListaSolucao),
@@ -108,7 +108,7 @@ aDireita(cliente(_, _, _, _, _, pai), cliente(azul, _, _, _, _, _), ListaSolucao
 aoLado(cliente(_, _, _, 40, _, _), cliente(_, _, _, _, _, irmao), ListaSolucao),
 
 % A mulher de Branco está ao lado da cliente que conseguiu 50% de desconto.
-aoLado(cliente(branco, _, _, _, _, _), cliente(_, _, _, 50, _, _), ListaSolucao),
+aoLado(cliente(branca, _, _, _, _, _), cliente(_, _, _, 50, _, _), ListaSolucao),
 
 % Quem está acompanhada do Pai está entre quem está acompanhada do Irmão e quem está acompanhada do Namorado, nessa ordem.
 entre(cliente(_, _, _, _, _, pai), cliente(_, _, _, _, _, irmao), cliente(_, _, _, _, _, namorado), ListaSolucao),
@@ -176,3 +176,7 @@ companhia(Companhia3),
 companhia(Companhia4),
 companhia(Companhia5),
 todosDiferentes([Companhia1, Companhia2, Companhia3, Companhia4, Companhia5]).
+
+% saida do programa
+% ?- solucao(L).
+% L = [cliente(vermelha, fernanda, tv, 70, 43, irmao), cliente(azul, rosana, fogao, 40, 36, marido), cliente(branca, anita, celular, 30, 22, tio), cliente(verde, marietta, notebook, 50, 31, pai), cliente(amarela, clara, geladeira, 60, 29, namorado)] .
