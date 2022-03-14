@@ -1,3 +1,7 @@
+% André Fernandes 
+% Problema 28
+% https://rachacuca.com.br/logica/problemas/black-friday/
+
 % Possiveis camisetas
 camiseta(amarela).
 camiseta(azul).
