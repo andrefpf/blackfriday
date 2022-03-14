@@ -81,6 +81,9 @@ entre(cliente(azul, _, _, _, _, _), cliente(_, _, _, _, _, irmao), cliente(_, _,
 % A mulher de Vermelho está ao lado da mulher que está comprando um Fogão.
 aoLado(cliente(vermelha, _, _, _, _, _), cliente(_, _, fogao, _, _, _), ListaSolucao),
 
+% Anita está exatamente à esquerda de quem conseguiu um desconto de 50%.
+iEsquerda(cliente(_, anita, _, _, _, _), cliente(_, _, _, 50, _, _), ListaSolucao),
+
 % Em uma das pontas está a mulher de camiseta Amarela.
 naPonta(cliente(amarela, _, _, _, _, _), ListaSolucao),
 
