@@ -8,6 +8,9 @@ e então
 ?- solucao(L).
 ```
 
+# Video de apresentação
+https://youtu.be/wcjKnsGFPYk
+
 # Problema 
 O problema está definido em https://rachacuca.com.br/logica/problemas/black-friday/.
 
